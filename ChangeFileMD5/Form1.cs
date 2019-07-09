@@ -215,7 +215,7 @@ namespace ChangeFileMD5
                     }
                     else
                     {
-                        MessageBox.Show(Path.Combine(fileNewDirectory, Path.GetFileName(filePath)));
+                        //MessageBox.Show(Path.Combine(fileNewDirectory, Path.GetFileName(filePath)));
                         fi.FileNewMd5 = GetFileMd5(Path.Combine(fileNewDirectory, Path.GetFileName(filePath)));
                         if (File.Exists(fileNewDirectory + TempTextName + ".txt"))
                             File.Delete(fileNewDirectory + TempTextName + ".txt");
